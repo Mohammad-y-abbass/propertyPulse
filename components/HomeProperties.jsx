@@ -1,15 +1,12 @@
 import Link from 'next/link';
 import PropertyCard from '@/components/PropertyCard';
-import properties from '@/properties.json';
 const HomeProperties = async () => {
-  const recentProperties = properties
-    .sort(() => Math.random() - Math.random())
-    .slice(0, 3);
+
 
   return (
     <>
       <section className='px-4 py-6'>
-        <div className='m-auto container-xl lg:container'>
+        {/* <div className='m-auto container-xl lg:container'>
           <h2 className='mb-6 text-3xl font-bold text-center text-blue-500'>
             Recent Properties
           </h2>
@@ -31,7 +28,7 @@ const HomeProperties = async () => {
           className='block px-6 py-4 text-center text-white bg-black rounded-xl hover:bg-gray-700'
         >
           View All Properties
-        </Link>
+        </Link> */}
       </section>
     </>
   );
